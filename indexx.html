@@ -5,7 +5,22 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="TEF-ITSM provides free IT support and maintenance for government schools and colleges, ensuring reliable computer labs across districts in Pakistan.">
+  <meta name="robots" content="index, follow">
   <title>TEF-IT Support & Maintenance</title>
+  <link rel="canonical" href="https://tef.com.pk/">
+  <link rel="manifest" href="assets/manifest.webmanifest">
+  <meta name="theme-color" content="#0d6efd">
+  <meta property="og:title" content="TEF-IT Support & Maintenance">
+  <meta property="og:description" content="TEF-ITSM provides free IT support and maintenance for government schools and colleges in Pakistan.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://tef.com.pk/">
+  <meta property="og:image" content="assets/images/ITSM LOGO.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="TEF-IT Support & Maintenance">
+  <meta name="twitter:description" content="Free IT support and maintenance for government schools and colleges.">
+  <meta name="twitter:image" content="assets/images/ITSM LOGO.jpg">
 
   <!-- ======= Google Font =======-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,83 +37,15 @@
   <!-- End Styles-->
   <!-- cloud flair icons for hmove-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  <!-- Swiper CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-  <link rel="icon" type="image/x-icon" href="/assets/images/favicons.ico">
+  <!-- Swiper CSS (using local vendor) -->
+  <link rel="icon" type="image/x-icon" href="assets/images/favicons.ico">
 
   <!-- ======= Theme Style =======-->
   <link href="assets/css/style.css" rel="stylesheet">
   <!-- End Theme Style-->
-  <!-- start CSS for header logo marquee tag -->
-  <style>
-    .logo-marquee {
-      overflow: hidden;
-      white-space: nowrap;
-      position: relative;
-      width: 100%;
-      padding: 5px 0;
-      background: #fff;
-      /* optional: adjust or remove */
-    }
 
-    .marquee-content {
-      display: inline-flex;
-      gap: 60px;
-      align-items: center;
-      animation: scroll-left 20s linear infinite;
-    }
-
-    .marquee-content img {
-      width: 110px;
-      opacity: 0.8;
-      transition: opacity 0.3s ease, transform 0.3s ease;
-    }
-
-    .marquee-content img:nth-child(2n) {
-      width: 80px;
-    }
-
-    .marquee-content img:hover {
-      opacity: 1;
-      transform: scale(1.05);
-    }
-
-    /* Animation */
-    @keyframes scroll-left {
-      from {
-        transform: translateX(0);
-      }
-
-      to {
-        transform: translateX(-50%);
-      }
-    }
-  </style>
-  <!-- end CSS for header logo marquee tag -->
   <!-- start CSS for header imges -->
-  <!-- CSS -->
-  <style>
-    .hero-img {
-      max-width: 100%;
-      position: relative;
-    }
 
-    .hero-img img {
-      width: 100%;
-      height: auto;
-      object-fit: cover;
-      border-radius: 1rem;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-    }
-
-    /* Responsive tweaks */
-    @media (max-width: 768px) {
-      .hero-img img {
-        border-radius: 0.5rem;
-      }
-    }
-  </style>
-  <!-- start CSS for header imges -->
 
   <!-- ======= Apply theme =======-->
   <script>
@@ -108,15 +55,44 @@
       document.documentElement.setAttribute('data-bs-theme', storedTheme);
     })();
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "TEF-ITSM",
+    "url": "https://tef.com.pk/",
+    "logo": "assets/images/ITSM LOGO.jpg",
+    "sameAs": [
+      "https://tef.com.pk/"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+92-300-0695646",
+      "contactType": "customer service",
+      "areaServed": "PK",
+      "availableLanguage": ["en", "ur"]
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "TEF-ITSM",
+    "url": "https://tef.com.pk/",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://tef.com.pk/?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
 
 </head>
 
 <body>
   <div class="bg-primary">
     <!-- 🔹 Info Bar -->
-
-
-    <!-- 🔹 ITSM Top Bar -->
     <div class="topbar container bg-primary ">
       <!-- Left side (Contact Info) -->
       <div class="topbar-left">
@@ -127,7 +103,7 @@
             </div>
             <div class="info-item">
               <i class="fa-solid fa-phone"></i>
-              <a href="tel:+923000695646" class="text-link">+92300-0695646</a>
+              <a href="tel:+923000695646" class="text-link">+92 300 0695646</a>
             </div>
           </div>
         </div>
@@ -167,17 +143,16 @@
 
 
         <!-- Start Logo-->
-        <a class="navbar-brand w-auto" href="index.html">
+        <a class="navbar-brand w-auto" href="indexx.html">
           <!-- If you use a text logo, uncomment this if it is commented-->
-          <!-- Vertex-->
 
           <!-- If you plan to use an image logo, uncomment this if it is commented-->
 
           <!-- logo dark--><img class="logo dark img-fluid px-3" style="height: 40px;" src="assets/images/ITSM LOGO.jpg"
-            alt="FreeBootstrap.net image placeholder">
+            alt="TEF-ITSM logo">
 
           <!-- logo light--><img class="logo light img-fluid px-3" style="height: 40px;"
-            src="assets/images/ITSM LOGO.jpg" alt="FreeBootstrap.net image placeholder">
+            src="assets/images/ITSM LOGO.jpg" alt="TEF-ITSM logo">
 
         </a>
         <!-- End Logo-->
@@ -194,14 +169,14 @@
               <!-- h5#fbs__net-navbarsLabel.offcanvas-title Vertex-->
 
               <!-- If you plan to use an image logo, uncomment this if it is commented-->
-              <a class="logo-link" id="fbs__net-navbarsLabel" href="index.html">
+              <a class="logo-link" id="fbs__net-navbarsLabel" href="indexx.html">
 
 
                 <!-- logo dark--><img class="logo dark img-fluid" style="height: 40px;"
-                  src="assets/images/ITSM LOGO.jpg" alt="FreeBootstrap.net image placeholder">
+                  src="assets/images/ITSM LOGO.jpg" alt="TEF-ITSM logo">
 
                 <!-- logo light--><img class="logo light img-fluid" style="height: 40px;"
-                  src="assets/images/ITSM LOGO.jpg" alt="FreeBootstrap.net image placeholder"></a>
+                  src="assets/images/ITSM LOGO.jpg" alt="TEF-ITSM logo"></a>
 
             </div>
             <button class="btn-close btn-close-black" type="button" data-bs-dismiss="offcanvas"
@@ -211,37 +186,40 @@
           <div class="offcanvas-body align-items-lg-center">
 
 
-            <ul class="navbar-nav nav me-auto ps-lg-5 mb-2 mb-lg-0">
-              <li class="nav-item"><a class="nav-link scroll-link active" aria-current="page" href="#home">Home</a></li>
-              <li class="nav-item"><a class="nav-link scroll-link" href="#about">About</a></li>
-              <li class="nav-item"><a class="nav-link scroll-link" href="#pricing">Pricing</a></li>
-              <li class="nav-item"><a class="nav-link scroll-link" href="#how-it-works">How It Works</a></li>
-              <li class="nav-item"><a class="nav-link scroll-link" href="#services">Services</a></li>
-              <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
+            <ul class="navbar-nav nav mx-auto ps-lg-5 mb-2 mb-lg-0">
+              <li class="nav-item px-2"><a class="nav-link scroll-link active" aria-current="page" href="#">Home</a></li>
+              <li class="nav-item px-2"><a class="nav-link scroll-link" href="#about">About</a></li>
+              <li class="nav-item px-2"><a class="nav-link scroll-link" href="#services-overview">Services</a></li>
+              <!-- <li class="nav-item"><a class="nav-link scroll-link" href="#how-it-works">How it Works</a></li> -->
+              <li class="nav-item px-2"><a class="nav-link scroll-link" href="#Projects">Projects</a></li>
+              <li class="nav-item px-2"><a class="nav-link scroll-link" href="#Testimonial">Testimonial</a></li>
+              <li class="nav-item px-2"><a class="nav-link scroll-link" href="#our-team">Team</a></li>
+              <!-- <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
                   aria-expanded="false">Dropdown <i class="bi bi-chevron-down"></i></a>
 
                 <ul class="dropdown-menu">
                   <li><a class="nav-link scroll-link dropdown-item" href="#">Multipages</a></li>
-                  <li><a class="nav-link scroll-link dropdown-item" href="#services">Services</a></li>
-                  <li><a class="nav-link scroll-link dropdown-item" href="#pricing">Pricing</a></li>
+                  <li><a class="nav-link scroll-link dropdown-item" href="#services-overview">Services</a></li>
+
                   <li class="nav-item dropstart"><a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
                       aria-expanded="false">Dropstart <i class="bi bi-chevron-right"></i></a>
                     <ul class="dropdown-menu">
-                      <li><a class="nav-link scroll-link dropdown-item" href="#services">Services</a></li>
-                      <li><a class="nav-link scroll-link dropdown-item" href="#pricing">Pricing</a></li>
+                      <li><a class="nav-link scroll-link dropdown-item" href="#services-overview">Services</a></li>
+
                       <li class="nav-item dropstart"><a class="nav-link dropdown-toggle" href="#"
                           data-bs-toggle="dropdown" aria-expanded="false">Dropstart <i
                             class="bi bi-chevron-right"></i></a>
                         <ul class="dropdown-menu">
-                          <li><a class="nav-link scroll-link dropdown-item" href="#services">Services</a></li>
-                          <li><a class="nav-link scroll-link dropdown-item" href="#pricing">Pricing</a></li>
+                          <li><a class="nav-link scroll-link dropdown-item" href="#services-overview">Services</a></li>
+
                           <li><a class="nav-link scroll-link dropdown-item" href="#">Something else here</a></li>
                           <li class="nav-item dropend"><a class="nav-link dropdown-toggle" href="#"
                               data-bs-toggle="dropdown" aria-expanded="false">Dropend <i
                                 class="bi bi-chevron-right"></i></a>
                             <ul class="dropdown-menu">
-                              <li><a class="nav-link scroll-link dropdown-item" href="#services">Services</a></li>
-                              <li><a class="nav-link scroll-link dropdown-item" href="#pricing">Pricing</a></li>
+                              <li><a class="nav-link scroll-link dropdown-item" href="#services-overview">Services</a>
+                              </li>
+
                               <li><a class="nav-link scroll-link dropdown-item" href="#">Something else here</a></li>
                             </ul>
                           </li>
@@ -251,8 +229,8 @@
                   </li>
                 </ul>
 
-              </li>
-              <li class="nav-item"><a class="nav-link scroll-link" href="#contact">Contact</a></li>
+              </li> -->
+              <li class="nav-item px-2"><a class="nav-link scroll-link" href="#contact">Contact</a></li>
             </ul>
 
           </div>
@@ -263,7 +241,7 @@
 
 
           <div class="header-social d-flex align-items-center gap-1">
-            <a class="btn btn-primary py-1" href="#">Login</a>
+            <a class="btn btn-primary py-1" href="login.html">Login</a>
             <button
               class="fbs__net-navbar-toggler btn-sm justify-content-center align-items-center ms-auto bg-white text-primary"
               data-bs-toggle="offcanvas" data-bs-target="#fbs__net-navbars" aria-controls="fbs__net-navbars"
@@ -320,7 +298,7 @@
                   </p>
                   <div class="cta d-flex gap-2 mb-3 mb-lg-4 justify-content-sm-start justify-content-evenly"
                     data-aos="fade-up" data-aos-delay="300"><a class="btn" href="#contact">Request Support</a><a
-                      class="btn btn-white-outline" href="#services">View Services
+                      class="btn btn-white-outline" href="#services-overview">View Services
                       <svg class="lucide lucide-arrow-up-right" xmlns="http://www.w3.org/2000/svg" width="18"
                         height="18" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                         stroke-linecap="round" stroke-linejoin="round">
@@ -333,13 +311,13 @@
                     <div class="logo-marquee">
                       <div class="marquee-content">
                         <!-- First Set -->
-                        <img src="assets/images/logo/actual-size/logo-air-bnb__black.svg" alt="Company 1">
-                        <img src="assets/images/logo/actual-size/logo-ibm__black.svg" alt="Company 2">
-                        <img src="assets/images/logo/actual-size/logo-google__black.svg" alt="Company 3">
+                        <img src="assets/images/logo/actual-size/logo-air-bnb__black.svg" alt="Airbnb logo" loading="lazy">
+                        <img src="assets/images/logo/actual-size/logo-ibm__black.svg" alt="IBM logo" loading="lazy">
+                        <img src="assets/images/logo/actual-size/logo-google__black.svg" alt="Google logo" loading="lazy">
                         <!-- Duplicate Set for Seamless Loop -->
-                        <img src="assets/images/logo/actual-size/logo-air-bnb__black.svg" alt="Company 1">
-                        <img src="assets/images/logo/actual-size/logo-ibm__black.svg" alt="Company 2">
-                        <img src="assets/images/logo/actual-size/logo-google__black.svg" alt="Company 3">
+                        <img src="assets/images/logo/actual-size/logo-air-bnb__black.svg" alt="Airbnb logo" loading="lazy">
+                        <img src="assets/images/logo/actual-size/logo-ibm__black.svg" alt="IBM logo" loading="lazy">
+                        <img src="assets/images/logo/actual-size/logo-google__black.svg" alt="Google logo" loading="lazy">
                       </div>
                     </div>
                   </div>
@@ -357,22 +335,22 @@
                     <div class="swiper-wrapper">
                       <!-- Slide 1 -->
                       <div class="swiper-slide">
-                        <img src="assets/images/business/business-img-1-min.jpg" alt="Hero Image 1"
+                        <img src="assets/images/business/business-img-1-min.jpg" alt="ITSM support visiting schools"
                           class="img-fluid rounded-4" />
                       </div>
                       <!-- Slide 2 -->
                       <div class="swiper-slide">
-                        <img src="assets/images/business/business-img-2-min.jpg" alt="Hero Image 2"
+                        <img src="assets/images/business/business-img-2-min.jpg" alt="Computer lab maintenance"
                           class="img-fluid rounded-4" />
                       </div>
                       <!-- Slide 3 -->
                       <div class="swiper-slide">
-                        <img src="assets/images/business/business-img-3-min.jpg" alt="Hero Image 3"
+                        <img src="assets/images/business/business-img-3-min.jpg" alt="IT training and support"
                           class="img-fluid rounded-4" />
                       </div>
                       <!-- Slide 4 -->
                       <div class="swiper-slide">
-                        <img src="assets/images/business/business-img-4-min.jpg" alt="Hero Image 4"
+                        <img src="assets/images/business/business-img-4-min.jpg" alt="Network setup in school"
                           class="img-fluid rounded-4" />
                       </div>
                       <!-- Slide 5 -->
@@ -449,19 +427,19 @@
                   <div class="swiper-wrapper" style="max-height: 350px;">
                     <!-- Slide 1 -->
                     <div class="swiper-slide">
-                      <img src="assets/images/person-sq-1-min.jpg" alt="Hero Image 1" class="img-fluid rounded-4 " />
+                        <img src="assets/images/person-sq-1-min.jpg" alt="Team member portrait 1" class="img-fluid rounded-4 " loading="lazy" />
                     </div>
                     <!-- Slide 2 -->
                     <div class="swiper-slide">
-                      <img src="assets/images/person-sq-2-min.jpg" alt="Hero Image 2" class="img-fluid rounded-4" />
+                        <img src="assets/images/person-sq-2-min.jpg" alt="Team member portrait 2" class="img-fluid rounded-4" loading="lazy" />
                     </div>
                     <!-- Slide 3 -->
                     <div class="swiper-slide">
-                      <img src="assets/images/person-sq-3-min.jpg" alt="Hero Image 3" class="img-fluid rounded-4" />
+                        <img src="assets/images/person-sq-3-min.jpg" alt="Team member portrait 3" class="img-fluid rounded-4" loading="lazy" />
                     </div>
                     <!-- Slide 4 -->
                     <div class="swiper-slide">
-                      <img src="assets/images/person-sq-4-min.jpg" alt="Hero Image 4" class="img-fluid rounded-4" />
+                        <img src="assets/images/person-sq-4-min.jpg" alt="Team member portrait 4" class="img-fluid rounded-4" loading="lazy" />
                     </div>
                     <!-- Slide 5 -->
                     <div class="swiper-slide">
@@ -510,7 +488,7 @@
       </section>
       <!-- ======= about end =======-->
       <!-- ======= Services =======-->
-      <section class="section features__v2 pt-0" id="services">
+      <section class="section features__v2 pt-0" id="services-overview">
         <div class="container">
           <div class="row">
             <div class="col-12">
@@ -659,7 +637,7 @@
               <div class="step-card text-center h-100 d-flex flex-column justify-content-start position-relative"
                 data-aos="fade-up" data-aos-delay="0">
                 <div data-aos="fade-right" data-aos-delay="500"><img class="arch-line" src="assets/images/arch-line.svg"
-                    alt="FreeBootstrap.net image placeholder"></div><span
+                    alt="Decorative arch line"></div><span
                   class="step-number rounded-circle text-center fw-bold mb-5 mx-auto">1</span>
                 <div>
                   <h3 class="fs-5 mb-4">Submit a request</h3>
@@ -671,7 +649,7 @@
               <div
                 class="step-card reverse text-center h-100 d-flex flex-column justify-content-start position-relative">
                 <div data-aos="fade-right" data-aos-delay="1100"><img class="arch-line reverse"
-                    src="assets/images/arch-line-reverse.svg" alt="FreeBootstrap.net image placeholder"></div><span
+                    src="assets/images/arch-line-reverse.svg" alt="Decorative arch line"></div><span
                   class="step-number rounded-circle text-center fw-bold mb-5 mx-auto">2</span>
                 <h3 class="fs-5 mb-4">Triage &amp; assign</h3>
                 <p>We prioritize, assign an engineer, and confirm next steps and ETA.</p>
@@ -715,28 +693,28 @@
                   <div class="stat-item">
                     <h3 class="fs-1 fw-bold"><span class="purecounter" data-purecounter-start="0"
                         data-purecounter-end="500" data-purecounter-duration="2">0</span><span>+</span></h3>
-                    <p class="mb-0">Services in Schools</p>
+                    <p class="mb-0">Schools Serviced</p>
                   </div>
                 </div>
                 <div class="col-12 col-sm-6 col-md-3 mb-4 mb-md-0 text-center" data-aos="fade-up" data-aos-delay="200">
                   <div class="stat-item">
                     <h3 class="fs-1 fw-bold"> <span class="purecounter" data-purecounter-start="0"
                         data-purecounter-end="15" data-purecounter-duration="2">0</span><span>+</span></h3>
-                    <p class="mb-0">New IT-Centers</p>
+                    <p class="mb-0">New IT Centers</p>
                   </div>
                 </div>
                 <div class="col-12 col-sm-6 col-md-3 mb-4 mb-md-0 text-center" data-aos="fade-up" data-aos-delay="300">
                   <div class="stat-item">
                     <h3 class="fs-1 fw-bold"><span class="purecounter" data-purecounter-start="0"
                         data-purecounter-end="50" data-purecounter-duration="2">0</span><span>+</span></h3>
-                    <p class="mb-0">Employee</p>
+                    <p class="mb-0">Employees</p>
                   </div>
                 </div>
                 <div class="col-12 col-sm-6 col-md-3 mb-4 mb-md-0 text-center" data-aos="fade-up" data-aos-delay="300">
                   <div class="stat-item">
                     <h3 class="fs-1 fw-bold"><span class="purecounter" data-purecounter-start="0"
                         data-purecounter-end="8" data-purecounter-duration="2">0</span><span>+</span></h3>
-                    <p class="mb-0">Core-Schools</p>
+                    <p class="mb-0">Core Schools</p>
                   </div>
                 </div>
               </div>
@@ -747,7 +725,7 @@
       <!-- End Stats-->
 
       <!-- ======= Services =======-->
-      <section class="section services__v3 pt-0" id="services">
+      <section class="section services__v3 pt-0" id="Projects">
         <div class="container">
           <div class="row mb-5">
             <div class="col-md-8 mx-auto text-center"><span class="subtitle text-uppercase mb-3" data-aos="fade-up"
@@ -982,7 +960,7 @@
       <!-- ======= end of Services =======-->
 
       <!-- ======= Testimonials Marquee =======-->
-      <section class="section testimonials__v2 pt-0" id="testimonials">
+      <section class="section testimonials__v2 pt-0" id="Testimonial">
         <div class="container">
           <div class="row">
             <div class="col-lg-6 mx-auto text-center">
@@ -1165,7 +1143,8 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-6 mx-auto text-center">
-              <span class="subtitle  text-sm py-1 px-3 text-uppercase mb-3" data-aos="fade-up" data-aos-delay="0">Our Team</span>
+              <span class="subtitle  text-sm py-1 px-3 text-uppercase mb-3" data-aos="fade-up" data-aos-delay="0">Our
+                Team</span>
               <h2 class="mb-3" data-aos="fade-up" data-aos-delay="100">Meet the Minds Behind the Mission</h2>
               <p data-aos="fade-up" data-aos-delay="200">
                 Dedicated professionals working to empower digital education.
@@ -1406,7 +1385,7 @@
                   <span>
                     <span class="d-block">Phone</span>
                     <strong>
-                      <a href="tel:+923000695646" class="text-decoration-none text-primary">+92-3000-695646</a>
+                      <a href="tel:+923000695646" class="text-decoration-none text-primary">+92 300 0695646</a>
                     </strong>
                   </span>
                 </div>
@@ -1565,6 +1544,7 @@
             </div>
             <div class="col-xl-4 text-center text-xl-start mb-3 mb-xl-0">
               Designed by<a href="" target="_blank">Tanveer_Ahmad</a>
+              <button id="btn-install-app" class="btn btn-primary btn-sm ms-2"><i class="bi bi-download me-1"></i>Get App</button>
             </div>
           </div>
         </div>
@@ -1576,8 +1556,12 @@
 
   <!-- ======= Back to Top =======-->
   <button id="back-to-top"><i class="bi bi-arrow-up-short"></i></button>
+  <style>
+    #btn-install-float { position: fixed; right: 20px; bottom: 80px; z-index: 1050; }
+  </style>
+  <button id="btn-install-float" class="btn btn-primary d-none"><i class="bi bi-download me-1"></i>Install App</button>
   <!-- WhatsApp Floating Button -->
-  <a href="https://wa.me/PHONE_NUMBER?text=Assalamualaikum%20Tanveer%20bhai%2C%20I%20visited%20your%20website%20and%20want%20to%20contact%20you."
+  <a href="https://wa.me/+923000695646?text=Assalam-o-alaikum%20%E2%80%94%20Respected%20ITSM%20team%2C%20I%20would%20like%20to%20request%20a%20visit%20from%20your%20team%20to%20my%20office%2Fschool.%20Regards%2C%20"
     class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
     <!-- WhatsApp SVG Icon -->
     <img src="assets/images/whatsapp.png" alt="WhatsApp">
@@ -1621,8 +1605,8 @@
     });
   </script>
 
-  <!-- Swiper JS -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <!-- Swiper JS (using local vendor) -->
+  <script src="assets/vendors/swiper/swiper-bundle.min.js"></script>
 
   <!-- Initialize Swiper with Fade Effect -->
   <script>
@@ -1656,11 +1640,50 @@
   <script src="assets/vendors/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script src="assets/vendors/isotope/isotope.pkgd.min.js"></script>
   <script src="assets/vendors/glightbox/glightbox.min.js"></script>
-  <script src="assets/vendors/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendors/aos/aos.js"></script>
   <script src="assets/vendors/purecounter/purecounter.js"></script>
   <script src="assets/js/custom.js"></script>
-  <script src="assets/js/send_email.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function () {
+        navigator.serviceWorker.register('assets/js/sw.js');
+      });
+    }
+  </script>
+  <script>
+    // PWA install prompt handler for footer + floating buttons
+    let deferredPrompt;
+    const footerBtn = document.getElementById('btn-install-app');
+    const floatBtn = document.getElementById('btn-install-float');
+
+    function showInstallButtons() {
+      if (floatBtn) floatBtn.classList.remove('d-none');
+      // Footer button is always visible now
+    }
+
+    function handleManualInstall() {
+      alert('If install prompt does not show:\n- Chrome menu → Add to Home screen\n- Or open in Chrome and visit again');
+    }
+
+    window.addEventListener('beforeinstallprompt', (e) => {
+      e.preventDefault();
+      deferredPrompt = e;
+      showInstallButtons();
+    });
+
+    async function triggerInstall() {
+      if (deferredPrompt) {
+        deferredPrompt.prompt();
+        await deferredPrompt.userChoice;
+        deferredPrompt = null;
+      } else {
+        handleManualInstall();
+      }
+    }
+
+    if (footerBtn) footerBtn.addEventListener('click', triggerInstall);
+    if (floatBtn) floatBtn.addEventListener('click', triggerInstall);
+  </script>
   <!-- End JavaScripts-->
 </body>
 

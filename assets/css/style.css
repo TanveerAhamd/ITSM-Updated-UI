@@ -1628,3 +1628,72 @@ a.text-link {
     flex: 1 1 auto;
   }
 }
+
+
+/* Logo Marquee CSS */
+.logo-marquee {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  width: 100%;
+  padding: 5px 0;
+  background: #fff;
+  /* optional: adjust or remove */
+}
+
+.marquee-content {
+  display: inline-flex;
+  gap: 60px;
+  align-items: center;
+  animation: scroll-left 20s linear infinite;
+}
+
+.marquee-content img {
+  width: 110px;
+  opacity: 0.8;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.marquee-content img:nth-child(2n) {
+  width: 80px;
+}
+
+.marquee-content img:hover {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+/* Animation */
+@keyframes scroll-left {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* Responsive Adjustments logo marque tag close */
+/* hero image custom css */
+.hero-img {
+  max-width: 100%;
+  position: relative;
+}
+
+.hero-img img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 1rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .hero-img img {
+    border-radius: 0.5rem;
+  }
+}
+
+/* hero image custom css end */
