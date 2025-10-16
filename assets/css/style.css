@@ -1170,8 +1170,8 @@ h6 {
   z-index: -1;
   width: 40px;
   height: 40px;
-  right: -10px;
-  bottom: 0px;
+  left: -10px;
+  top: -10px;
   border-radius: 50%;
   background-color: rgba(var(--bs-secondary-rgb), 1);
 }
@@ -1271,8 +1271,8 @@ h6 {
 }
 
 .stats__v3 .content {
-  padding-top: 70px;
-  padding-bottom: 70px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   background-color: var(--bs-primary);
   color: var(--bs-white);
   overflow: hidden;
