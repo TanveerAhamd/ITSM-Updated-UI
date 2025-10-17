@@ -25,7 +25,6 @@
       overflow: hidden;
     }
 
-    /* Login Box */
     .login-box {
       background: #ffffff;
       border-radius: 10px;
@@ -37,7 +36,6 @@
       animation: float 4s ease-in-out infinite;
     }
 
-    /* Floating Animation */
     @keyframes float {
       0% {
         transform: translateY(0);
@@ -174,30 +172,31 @@
       <a href="index.html"><img src="./assets/images/Itsmlogo.png" alt="Logo"></a>
     </div>
     <h5 class="text-primary">TEF ITSM Login</h5>
-    <form>
+
+    <form action="login.php" method="POST">
       <div class="mb-2 text-start">
         <label class="form-label" for="email">Email</label>
-        <input type="email" id="email" class="form-control" placeholder="Enter email" />
+        <input type="email" id="email" name="email" class="form-control" placeholder="Enter email" required />
       </div>
 
       <div class="mb-2 text-start password-wrapper">
         <label class="form-label" for="password">Password</label>
-        <input type="password" id="password" class="form-control" placeholder="Enter password" />
+        <input type="password" id="password" name="password" class="form-control" placeholder="Enter password" required />
         <i class="fa-solid fa-eye" id="togglePassword"></i>
       </div>
 
       <div class="d-flex justify-content-between align-items-center mb-3">
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="rememberMe" style="scale:0.9;">
-          <label class="form-check-label small" for="rememberMe">Remember</label>
+          <input class="form-check-input" type="checkbox" id="rememberMe" name="remember" style="scale:0.9;">
+          <label class="form-check-label small" for="rememberMe">Remember Me</label>
         </div>
-        <a href="#" class="small text-primary">Forgot password?</a>
+        <a href="#" class="small text-primary">Forgot Password?</a>
       </div>
 
       <div class="text-center">
         <button type="submit" class="btn btn-primary w-50">Login</button>
         <p class="small fw-bold mt-2 mb-0">
-          Don’t have an account? <a href="#" class="text-primary">Create Account</a>
+          Don’t have an account? <a href="register.html" class="text-primary">Create Account</a>
         </p>
       </div>
 
