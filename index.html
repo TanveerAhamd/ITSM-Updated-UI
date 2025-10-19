@@ -180,6 +180,32 @@
     }
   }
   </script>
+<!-- Disable Right Click / F12 / Inspect -->
+<script>
+document.addEventListener('contextmenu', e => e.preventDefault());
+document.onkeydown = e => {
+  if (
+    e.keyCode === 123 || // F12
+    (e.ctrlKey && e.shiftKey && [73, 74, 67].includes(e.keyCode)) || // Ctrl+Shift+I/J/C
+    (e.ctrlKey && [83, 85].includes(e.keyCode)) // Ctrl+S / Ctrl+U
+  ) {
+    e.preventDefault();
+    return false;
+  }
+};
+
+// Detect DevTools open
+(function(){
+  const threshold = 160;
+  const checkDevTools = () => {
+    if (window.outerWidth - window.innerWidth > threshold ||
+        window.outerHeight - window.innerHeight > threshold) {
+      document.body.innerHTML = "<h2 style='margin-top:20%;text-align:center;color:red;'>⚠️ Developer Tools Detected!<br>Please close them to continue.</h2>";
+    }
+  };
+  setInterval(checkDevTools, 1000);
+})();
+</script>
 
 </head>
 
