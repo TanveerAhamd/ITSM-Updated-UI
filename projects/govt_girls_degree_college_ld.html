@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="TEF-ITSM provides free IT support and maintenance for government schools and colleges, ensuring reliable computer labs across districts in Pakistan.">
+  <meta name="robots" content="index, follow">
+  <title>TEF-IT Support & Maintenance</title>
+  <link rel="canonical" href="https://tef.com.pk/">
+
+  <link rel="manifest" href="../assets/manifest.webmanifest">
+  <meta name="theme-color" content="#0d6efd">
+  <meta property="og:title" content="TEF-IT Support & Maintenance">
+  <meta property="og:description"
+    content="TEF-ITSM provides free IT support and maintenance for government schools and colleges in Pakistan.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://tef.com.pk/">
+  <meta property="og:image" content="assets/images/ITSM LOGO.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="TEF-IT Support & Maintenance">
+  <meta name="twitter:description" content="Free IT support and maintenance for government schools and colleges.">
+  <meta name="twitter:image" content="assets/images/ITSM LOGO.jpg">
+
+  <!-- ======= Google Font =======-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet">
+  <!-- End Google Font-->
+
+  <!-- ======= Styles =======-->
+  <link href="../assets/vendors/bootstrap/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendors/bootstrap-icons/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="../assets/vendors/glightbox/glightbox.min.css" rel="stylesheet">
+  <link href="../assets/vendors/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="../assets/vendors/aos/aos.css" rel="stylesheet">
+  <!-- End Styles-->
+  <!-- cloud flair icons for hmove-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <!-- Swiper CSS (using local vendor) -->
+  <link rel="icon" type="image/x-icon" href="../assets/images/favicons.ico">
+
+  <!-- ======= Theme Style =======-->
+  <link href="../assets/css/style.css" rel="stylesheet">
+  <!-- End Theme Style-->
+
+  <!-- start CSS for header imges -->
+  <style>
+    .project-marquee-container {
+      width: 100%;
+      /* max-width: px; */
+      margin: 0 auto;
+      border-radius: 12px;
+      overflow: hidden;
+      /* background: #f8f9fa; */
+      padding: 15px;
+      border: 1px solid #e3e3e3;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    .project-marquee {
+      height: 600px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .project-track {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      animation: scrollDown 25s linear infinite;
+    }
+
+    .project-marquee:hover .project-track {
+      animation-play-state: paused;
+    }
+
+    .project-item a {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: #333;
+      font-size: 0.9rem;
+      transition: 0.3s;
+    }
+
+    .project-item a:hover {
+      color: #007589;
+    }
+
+    .project-item img {
+      width: 55px;
+      height: 55px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid #fff;
+      box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+    }
+
+    .project-item:hover img {
+      transform: scale(1.05);
+    }
+
+    @keyframes scrollDown {
+      0% {
+        transform: translateY(-50%);
+      }
+
+      100% {
+        transform: translateY(0);
+      }
+    }
+  </style>
+
+
+  <!-- ======= Apply theme =======-->
+  <script>
+    // Apply the theme as early as possible to avoid flicker
+    (function () {
+      const storedTheme = localStorage.getItem('theme') || 'light';
+      document.documentElement.setAttribute('data-bs-theme', storedTheme);
+    })();
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "TEF-ITSM",
+    "url": "https://tef.com.pk/",
+    "logo": "assets/images/ITSM LOGO.jpg",
+    "sameAs": [
+      "https://tef.com.pk/"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+92-300-0695646",
+      "contactType": "customer service",
+      "areaServed": "PK",
+      "availableLanguage": ["en", "ur"]
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "TEF-ITSM",
+    "url": "https://tef.com.pk/",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://tef.com.pk/?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+
+</head>
+
+<body>
+  <div class="bg-primary">
+    <!-- 🔹 Info Bar -->
+    <div class="topbar container bg-primary ">
+      <!-- Left side (Contact Info) -->
+      <div class="topbar-left">
+        <div class="info-bar">
+          <div class="info-container px-2 px-md-3 ">
+            <div class="info-item d-none d-md-block">
+              <i class="fa-solid fa-clock"></i> Mon-Sat, 8.00–4.00
+            </div>
+            <div class="info-item">
+              <i class="fa-solid fa-phone"></i>
+              <a href="tel:+923000695646" class="text-link">+92 300 0695646</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right side (Scrolling text) -->
+      <div class="topbar-right">
+        <div class="hmove">
+          <!-- 1st cycle -->
+          <div class="hitem"><i class="fas fa-bolt"></i> Fast & Reliable IT Support Solutions</div>
+          <div class="hitem"><i class="fas fa-cogs"></i> Smart Problem Management & Root Cause Analysis</div>
+          <div class="hitem"><i class="fa-solid fa-map-marker-alt"></i> 12 MPR, Shuja Abad Rd, Lodhran, Pakistan</div>
+          <div class="hitem"><i class="fas fa-database"></i> Asset & Configuration Tracking Made Easy</div>
+
+          <!-- 2nd cycle -->
+          <div class="hitem"><i class="fas fa-network-wired"></i> Network Monitoring & Performance Optimization</div>
+          <div class="hitem"><i class="fas fa-user-shield"></i> Cybersecurity & Data Protection Services</div>
+          <div class="hitem"><i class="fas fa-headset"></i> 24/7 Technical Assistance & Remote Support</div>
+          <div class="hitem"><i class="fas fa-chart-line"></i> Continuous Service Improvement & Reporting</div>
+
+          <!-- 3rd cycle -->
+          <div class="hitem"><i class="fas fa-laptop-code"></i> Custom Software & Web Application Solutions</div>
+          <div class="hitem"><i class="fas fa-sync-alt"></i> System Maintenance & Regular Updates</div>
+          <div class="hitem"><i class="fas fa-cloud"></i> Cloud Infrastructure Setup & Management</div>
+          <div class="hitem"><i class="fas fa-lightbulb"></i> Innovative IT Strategies for Business Growth</div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="site-wrap">
+
+    <!-- ======= Header =======-->
+    <header class="fbs__net-navbar navbar navbar-expand-lg dark" aria-label="freebootstrap.net navbar">
+      <div class="container d-flex align-items-center justify-content-between">
+
+
+        <!-- Start Logo-->
+        <a class="navbar-brand w-auto" href="../index.html">
+          <!-- If you use a text logo, uncomment this if it is commented-->
+
+          <!-- If you plan to use an image logo, uncomment this if it is commented-->
+
+          <!-- logo dark--><img class="logo dark img-fluid px-1" style="height: 40px;"
+            src="../assets/images/ITSM LOGO.jpg" alt="TEF-ITSM logo">
+
+          <!-- logo light--><img class="logo light img-fluid px-3" style="height: 40px;"
+            src="../assets/images/ITSM LOGO.jpg" alt="TEF-ITSM logo">
+
+        </a>
+        <!-- End Logo-->
+
+        <!-- Start offcanvas-->
+        <div class="offcanvas offcanvas-start w-75" id="fbs__net-navbars" tabindex="-1"
+          aria-labelledby="fbs__net-navbarsLabel">
+
+
+          <div class="offcanvas-header">
+            <div class="offcanvas-header-logo">
+              <!-- If you use a text logo, uncomment this if it is commented-->
+
+              <!-- h5#fbs__net-navbarsLabel.offcanvas-title Vertex-->
+
+              <!-- If you plan to use an image logo, uncomment this if it is commented-->
+              <a class="logo-link" id="fbs__net-navbarsLabel" href="index.html">
+
+
+                <!-- logo dark--><img class="logo dark img-fluid" style="height: 40px;"
+                  src="../assets/images/ITSM LOGO.jpg" alt="TEF-ITSM logo">
+
+                <!-- logo light--><img class="logo light img-fluid" style="height: 40px;"
+                  src="../assets/images/ITSM LOGO.jpg" alt="TEF-ITSM logo"></a>
+
+            </div>
+            <button class="btn-close btn-close-black" type="button" data-bs-dismiss="offcanvas"
+              aria-label="Close"></button>
+          </div>
+
+          <div class="offcanvas-body align-items-lg-center">
+
+
+            <ul class="navbar-nav nav mx-auto ps-lg-5 mb-2 mb-lg-0">
+              <li class="nav-item px-2"><a class="nav-link scroll-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item px-2"><a class="nav-link scroll-link" href="../index.html#about">About</a></li>
+              <li class="nav-item px-2"><a class="nav-link scroll-link"
+                  href="../index.html#services-overview">Services</a></li>
+              <!-- <li class="nav-item"><a class="nav-link scroll-link" href="#how-it-works">How it Works</a></li> -->
+              <li class="nav-item px-2"><a class="nav-link scroll-link" href="../index.html#Projects">Projects</a>
+              </li>
+              <li class="nav-item px-2"><a class="nav-link scroll-link"
+                  href="../index.html#Testimonial">Testimonial</a></li>
+              <li class="nav-item px-2"><a class="nav-link scroll-link" href="../index.html#our-team">Team</a></li>
+              <li class="nav-item px-2"><a class="nav-link scroll-link" href="../index.html#contact">Contact</a></li>
+              <li class="nav-item px-2 d-block d-md-none my-3"> <button id="btn-install-app"
+                  class="btn btn-primary btn-sm px-2 py-1 "><i class="bi bi-download me-1"></i>Get App</button> </li>
+            </ul>
+
+          </div>
+        </div>
+        <!-- End offcanvas-->
+
+        <div class="ms-auto w-auto">
+
+
+          <div class="header-social d-flex align-items-center gap-1">
+            <a class="btn btn-primary py-1" href="../login.html">Login</a>
+            <button
+              class="fbs__net-navbar-toggler btn-sm justify-content-center align-items-center ms-auto bg-white text-primary"
+              data-bs-toggle="offcanvas" data-bs-target="#fbs__net-navbars" aria-controls="fbs__net-navbars"
+              aria-label="Toggle navigation" aria-expanded="false">
+              <svg class="fbs__net-icon-menu" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <line x1="21" x2="3" y1="6" y2="6"></line>
+                <line x1="15" x2="3" y1="12" y2="12"></line>
+                <line x1="17" x2="3" y1="18" y2="18"></line>
+              </svg>
+              <svg class="fbs__net-icon-close" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M18 6 6 18"></path>
+                <path d="m6 6 12 12"></path>
+              </svg>
+            </button>
+            <!-- User Icon login for mobile -->
+            <div
+              class=" d-sm-none user-icon d-flex justify-content-center align-items-center rounded-circle bg-white text-primary ">
+              <a href="../login.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="lucide lucide-circle-user-icon lucide-circle-user text-primary">
+                  <circle cx="12" cy="12" r="10" />
+                  <circle cx="12" cy="10" r="3" />
+                  <path d="M7 20.662V19a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v1.662" />
+                </svg>
+              </a>
+            </div>
+
+          </div>
+    </header>
+    <!-- End Header-->
+
+    <!-- ======= Main =======-->
+    <main>
+
+      <!-- ======= Project Detail section =======-->
+      <section class="about__v4 pt-5 section" id="">
+        <div class="container pt-5">
+          <div class=" mb-4 mb-md-0"><span class="subtitle text-uppercase mb-3" data-aos="fade-up"
+              data-aos-delay="200">Project_detial</span>
+            <div data-aos="fade-up" data-aos-delay="200" class="mb-3">
+              <a data-aos="fade-up" data-aos-delay="200"
+                class="d-inline-block text-500 text-decoration-none text-dark-subltle" href="#!">IT Support &amp;
+                Maintenance – TEF</a>,&nbsp;
+              <a data-aos="fade-up" data-aos-delay="200" class="d-inline-block text-500 text-decoration-none"
+                href="#!">November 13, 2021</a>
+            </div>
+            <h2 class=" " data-aos="fade-up" data-aos-delay="200">GBDC Lodhran—IT Lab Upgradation(District Lodhran)</h2>
+            <p data-aos="fade-up" data-aos-delay="200">TEF|ITSM supports Tareen Education Foundation initiatives with
+              responsive help desk, on-site
+              assistance, and secure, well-maintained systems.</p>
+
+            <div class="row">
+              <div class="col-md-4 order-md-2">
+                <div class="row justify-content-end">
+                  <div class="col-md-11 mb-3 mb-md-0">
+                    <h3 class="small fw-bold " data-aos="fade-up" data-aos-delay="200"><span
+                        class="subtitle text-uppercase" data-aos="fade-up" data-aos-delay="200">Project Summary</span>
+                    </h3>
+                    <div data-aos="fade-up" data-aos-delay="200">
+                      <div class="row">
+                        <div class="col-6">
+                          <p data-aos="fade-up " class="mb-0 small" data-aos-delay="200"> <strong class="">Category
+                              :</strong> <span class="badge bg-primary text-white me-1">New IT Lab</span>
+                          </p>
+                        </div>
+                        <div class="col-6">
+                          <p data-aos="fade-up " class="mb-0 small" data-aos-delay="200"> <strong>Location:</strong>
+                            Lodhran
+                          </p>
+                        </div>
+                        <div class="col-6">
+                          <p data-aos="fade-up " class="mb-0 small" data-aos-delay="200"> <strong>Duration :</strong>
+                            3-6
+                            month</p>
+                        </div>
+                        <div class="col-6">
+                          <p data-aos="fade-up " class="mb-0 small" data-aos-delay="200"><strong>Budget:</strong> Rs.
+                            980,000 </p>
+                        </div>
+                        <div class="col-6">
+                          <p data-aos="fade-up " class="mb-0 small" data-aos-delay="200"> <strong>Inaugurated
+                              by:</strong>
+                            Ali Khan Tareen </p>
+                        </div>
+                        <div class="col-6">
+                          <p data-aos="fade-up " class="mb-0 small" data-aos-delay="200"> <strong>Date :</strong>
+                            12-june-25 </p>
+                        </div>
+
+                      </div>
+
+                    </div>
+                    <h4 class="small fw-bold mt-4 mb-3" data-aos="fade-up" data-aos-delay="300">What sets us apart</h4>
+                    <ul class="d-flex flex-row flex-wrap list-unstyled gap-3 features" data-aos="fade-up"
+                      data-aos-delay="400">
+                      <li class="d-flex align-items-center gap-2"><span class="icon rounded-circle text-center"><i
+                            class="bi bi-check"></i></span><span class="text">SLA-driven response times</span></li>
+                      <li class="d-flex align-items-center gap-2"><span class="icon rounded-circle text-center"><i
+                            class="bi bi-check"></i></span><span class="text">Proactive monitoring &amp;
+                          maintenance</span></li>
+                      <li class="d-flex align-items-center gap-2"><span class="icon rounded-circle text-center"><i
+                            class="bi bi-check"></i></span><span class="text">Security &amp; data protection</span></li>
+                      <li class="d-flex align-items-center gap-2"><span class="icon rounded-circle text-center"><i
+                            class="bi bi-check"></i></span><span class="text">Clear communication</span></li>
+                      <li class="d-flex align-items-center gap-2"><span class="icon rounded-circle text-center"><i
+                            class="bi bi-check"></i></span><span class="text">End‑user enablement</span></li>
+                    </ul>
+                    <div>
+                      <div data-aos="fade-up" data-aos-delay="100" class="project-marquee-container d-none d-md-block">
+                        <div class="text-center">
+                          <span class="subtitle text-uppercase mb-3" data-aos="fade-up" data-aos-delay="300">
+                            Our Latest Projects
+                          </span>
+                        </div>
+
+                        <div class="project-marquee">
+                          <div class="project-track">
+
+                            <!-- ✅ ORIGINAL PROJECT LIST -->
+                            <div class="project-item">
+                              <a href="./projects/govt_girls_degree_college_ld.html">
+                                <img src="./projects_thumbnail/img1.jpg" alt="GBDC Lodhran">
+                                <div class="d-flex flex-column justify-content-center">
+                                  <span class="text-small fw-bold m-0">GBDC School Lodhran</span>
+                                  <span class="m-0">Category:
+                                    <span class="text-sm bg-primary rounded text-white px-2">New IT Lab</span>
+                                  </span>
+                                </div>
+                              </a>
+                            </div>
+
+                            <div class="project-item">
+                              <a href="./projects/govt_high_school_khanewal.html">
+                                <img src="./projects_thumbnail/img2.jpg" alt="Govt High School Khanewal">
+                                <div class="d-flex flex-column justify-content-center">
+                                  <span class="text-small fw-bold m-0">Govt High School Khanewal</span>
+                                  <span class="m-0">Category:
+                                    <span class="text-sm bg-success rounded text-white px-2">Smart Classroom</span>
+                                  </span>
+                                </div>
+                              </a>
+                            </div>
+
+                            <div class="project-item">
+                              <a href="./projects/govt_college_bahawalpur.html">
+                                <img src="./projects_thumbnail/img3.jpg" alt="Govt College Bahawalpur">
+                                <div class="d-flex flex-column justify-content-center">
+                                  <span class="text-small fw-bold m-0">Govt College Bahawalpur</span>
+                                  <span class="m-0">Category:
+                                    <span class="text-sm bg-warning rounded text-white px-2">Renovation</span>
+                                  </span>
+                                </div>
+                              </a>
+                            </div>
+
+                            <div class="project-item">
+                              <a href="./projects/govt_high_school_multan.html">
+                                <img src="./projects_thumbnail/img4.jpg" alt="Govt High School Multan">
+                                <div class="d-flex flex-column justify-content-center">
+                                  <span class="text-small fw-bold m-0">Govt High School Multan</span>
+                                  <span class="m-0">Category:
+                                    <span class="text-sm bg-primary  rounded text-white px-2">Lab Setup</span>
+                                  </span>
+                                </div>
+                              </a>
+                            </div>
+
+                            <div class="project-item">
+                              <a href="./projects/govt_degree_college_dgkhan.html">
+                                <img src="./projects_thumbnail/img5.jpg" alt="Govt Degree College DG Khan">
+                                <div class="d-flex flex-column justify-content-center">
+                                  <span class="text-small fw-bold m-0">Govt Degree College DG Khan</span>
+                                  <span class="m-0">Category:
+                                    <span class="text-sm bg-info rounded text-white px-2">Solar Power</span>
+                                  </span>
+                                </div>
+                              </a>
+                            </div>
+
+                            <div class="project-item">
+                              <a href="./projects/govt_girls_high_school_rajanpur.html">
+                                <img src="./projects_thumbnail/img6.jpg" alt="Govt Girls High School Rajanpur">
+                                <div class="d-flex flex-column justify-content-center">
+                                  <span class="text-small fw-bold m-0">Govt Girls High School Rajanpur</span>
+                                  <span class="m-0">Category:
+                                    <span class="text-sm bg-secondary rounded text-white px-2">Digital Library</span>
+                                  </span>
+                                </div>
+                              </a>
+                            </div>
+
+                            <div class="project-item">
+                              <a href="./projects/govt_primary_school_muzaffargarh.html">
+                                <img src="./projects_thumbnail/img7.jpg" alt="Govt Primary School Muzaffargarh">
+                                <div class="d-flex flex-column justify-content-center">
+                                  <span class="text-small fw-bold m-0">Govt Primary School </span>
+                                  <span class="m-0">Category:
+                                    <span class="text-sm bg-dark rounded text-white px-2">Networking</span>
+                                  </span>
+                                </div>
+                              </a>
+                            </div>
+
+                            <div class="project-item">
+                              <a href="./projects/govt_college_layyah.html">
+                                <img src="./projects_thumbnail/img8.jpg" alt="Govt College Layyah">
+                                <div class="d-flex flex-column justify-content-center">
+                                  <span class="text-small fw-bold m-0">Govt College Layyah</span>
+                                  <span class="m-0">Category:
+                                    <span class="text-sm bg-success rounded text-white px-2">E-Classroom</span>
+                                  </span>
+                                </div>
+                              </a>
+                            </div>
+
+                            <!-- ✅ DUPLICATE LIST FOR SMOOTH LOOP -->
+                            <div class="project-item">
+                              <a href="./projects/govt_girls_degree_college_ld.html">
+                                <img src="./projects_thumbnail/img1.jpg" alt="GBDC Lodhran">
+                                <div class="d-flex flex-column justify-content-center">
+                                  <span class="text-small fw-bold m-0">GBDC School Lodhran</span>
+                                  <span class="m-0">Category:
+                                    <span class="text-sm bg-primary rounded text-white px-2">New IT Lab</span>
+                                  </span>
+                                </div>
+                              </a>
+                            </div>
+
+                            <div class="project-item">
+                              <a href="./projects/govt_high_school_khanewal.html">
+                                <img src="./projects_thumbnail/img2.jpg" alt="Govt High School Khanewal">
+                                <div class="d-flex flex-column justify-content-center">
+                                  <span class="text-small fw-bold m-0">Govt High School Khanewal</span>
+                                  <span class="m-0">Category:
+                                    <span class="text-sm bg-primary rounded text-white px-2">New IT Lab</span>
+                                  </span>
+                                </div>
+                              </a>
+                            </div>
+
+                            <div class="project-item">
+                              <a href="./projects/govt_college_bahawalpur.html">
+                                <img src="./projects_thumbnail/img3.jpg" alt="Govt College Bahawalpur">
+                                <div class="d-flex flex-column justify-content-center">
+                                  <span class="text-small fw-bold m-0">Govt College Bahawalpur</span>
+                                  <span class="m-0">Category:
+                                    <span class="text-sm bg-warning rounded text-white px-2">Renovation</span>
+                                  </span>
+                                </div>
+                              </a>
+                            </div>
+
+                            <div class="project-item">
+                              <a href="./projects/govt_high_school_multan.html">
+                                <img src="./projects_thumbnail/img4.jpg" alt="Govt High School Multan">
+                                <div class="d-flex flex-column justify-content-center">
+                                  <span class="text-small fw-bold m-0">Govt High School Multan</span>
+                                  <span class="m-0">Category:
+                                    <span class="text-sm bg-danger rounded text-white px-2">Lab Setup</span>
+                                  </span>
+                                </div>
+                              </a>
+                            </div>
+
+                            <div class="project-item">
+                              <a href="./projects/govt_degree_college_dgkhan.html">
+                                <img src="./projects_thumbnail/img5.jpg" alt="Govt Degree College DG Khan">
+                                <div class="d-flex flex-column justify-content-center">
+                                  <span class="text-small fw-bold m-0">Govt Degree College DG Khan</span>
+                                  <span class="m-0">Category:
+                                    <span class="text-sm bg-info rounded text-white px-2">Solar Power</span>
+                                  </span>
+                                </div>
+                              </a>
+                            </div>
+
+                            <div class="project-item">
+                              <a href="./projects/govt_girls_high_school_rajanpur.html">
+                                <img src="./projects_thumbnail/img6.jpg" alt="Govt Girls High School Rajanpur">
+                                <div class="d-flex flex-column justify-content-center">
+                                  <span class="text-small fw-bold m-0">Govt Girls High School Rajanpur</span>
+                                  <span class="m-0">Category:
+                                    <span class="text-sm bg-secondary rounded text-white px-2">Digital Library</span>
+                                  </span>
+                                </div>
+                              </a>
+                            </div>
+
+                            <div class="project-item">
+                              <a href="./projects/govt_primary_school_muzaffargarh.html">
+                                <img src="./projects_thumbnail/img7.jpg" alt="Govt Primary School Muzaffargarh">
+                                <div class="d-flex flex-column justify-content-center">
+                                  <span class="text-small fw-bold m-0">Govt Primary School</span>
+                                  <span class="m-0">Category:
+                                    <span class="text-sm bg-dark rounded text-white px-2">Networking</span>
+                                  </span>
+                                </div>
+                              </a>
+                            </div>
+
+                            <div class="project-item">
+                              <a href="./projects/govt_college_layyah.html">
+                                <img src="./projects_thumbnail/img8.jpg" alt="Govt College Layyah">
+                                <div class="d-flex flex-column justify-content-center">
+                                  <span class="text-small fw-bold m-0">Govt College Layyah</span>
+                                  <span class="m-0">Category:
+                                    <span class="text-sm bg-success rounded text-white px-2">E-Classroom</span>
+                                  </span>
+                                </div>
+                              </a>
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-8">
+                <div class="img-wrap position-relative">
+                  <div class="swiper heroSwiper rounded-4"
+                    data-swiper='{"loop":true,"autoplay":{"delay":3000},"effect":"fade","speed":800}' data-aos="fade-up"
+                    data-aos-delay="100">
+                    <div class="swiper-wrapper" style="max-height: 400px;">
+                      <!-- Slide 1 -->
+                      <div class="swiper-slide">
+                        <img src="./ict-center-slider/GGDC Lodhran/img1.jpg" alt="Team member portrait 1"
+                          class="img-fluid rounded-4 " loading="lazy" />
+                      </div>
+                      <!-- Slide 2 -->
+                      <div class="swiper-slide">
+                        <img src="./ict-center-slider/GGDC Lodhran/img2.jpg" alt="Team member portrait 2"
+                          class="img-fluid rounded-4" loading="lazy" />
+                      </div>
+                      <!-- Slide 3 -->
+                      <div class="swiper-slide">
+                        <img src="./ict-center-slider/GGDC Lodhran/img3.jpg" alt="Team member portrait 3"
+                          class="img-fluid rounded-4" loading="lazy" />
+                      </div>
+                      <!-- Slide 4 -->
+                      <div class="swiper-slide">
+                        <img src="./ict-center-slider/GGDC Lodhran/img4.jpg" alt="Team member portrait 4"
+                          class="img-fluid rounded-4" loading="lazy" />
+                      </div>
+
+                    </div>
+                    <!-- Optional Pagination or Arrows can be added here -->
+                  </div>
+
+                  <div class="card-body px-0 py-3" data-aos="fade-up" data-aos-delay="200">
+                    <p>"A focused, cost-efficient IT lab revival that upgraded 45 existing computers and
+                      secured reliable power backup for uninterrupted learning."</p>
+                    <p>From classrooms to offices, we deliver proactive monitoring, rapid incident resolution, and
+                      lifecycle management so your teams can focus on impact.</p>
+                  </div>
+
+
+                  <h5 data-aos="fade-up" data-aos-delay="200" class="mt-1">Facilities &amp; Work Completed</h5>
+
+                  <table class="table table-responsive table-bordered mt-3 table-sm" class="card-body px-0 py-3"
+                    data-aos="fade-up" data-aos-delay="200">
+                    <thead class="table-success">
+                      <tr>
+                        <th>Equipment</th>
+                        <th>Quantity</th>
+                        <th>Specification/Details</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Computers</td>
+                        <td>45</td>
+                        <td>Upgraded for better performance and usability</td>
+                      </tr>
+                      <tr>
+                        <td>UPS</td>
+                        <td>1 (5.5 KV)</td>
+                        <td>Includes 4 batteries for dependable power backup</td>
+                      </tr>
+                      <tr>
+                        <td>Civil &amp; Lab Setup</td>
+                        <td>Lab-wide</td>
+                        <td>Minor improvements: layout, cabling, and ventilation</td>
+                      </tr>
+                      <tr>
+                        <td>Projector</td>
+                        <td>1</td>
+                        <td>For classroom presentations and interactive sessions</td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                  <h5 class="mt-4" data-aos="fade-up" data-aos-delay="200">Impact</h5>
+                  <p data-aos="fade-up" data-aos-delay="200">
+                    The upgraded lab transformed the learning environment—enabling uninterrupted practical
+                    sessions, improving students’ digital skills, and preparing them for higher education
+                    and job-market requirements.
+                  </p>
+
+                  <h5 class="mt-4" data-aos="fade-up" data-aos-delay="200">Suggested Next Steps</h5>
+                  <ul class="list-unstyled mt-2" data-aos="fade-up" data-aos-delay="200">
+                    <li>✅ Schedule periodic UPS and battery maintenance every 3 months.</li>
+                    <li>✅ Provide teacher training to integrate lab resources into classwork.</li>
+                    <li>✅ Plan software patches and antivirus updates every 6 months.</li>
+                  </ul>
+
+                  <p class="mt-4" data-aos="fade-up" data-aos-delay="200">
+                    <strong>College:</strong> Government Boys Degree College, Lodhran<br>
+                    <strong>District:</strong> Lodhran
+                  </p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+      <!-- ======= about end =======-->
+
+
+      <!-- ======= Footer =======-->
+      <footer class="footer border-top shadow py-4">
+        <div class="container">
+
+          <div class="row credits">
+            <div class="col-xl-8 text-center text-xl-start mb-3 mb-xl-0">
+
+              &copy;
+              <script>document.write(new Date().getFullYear());</script> TEF-ITSM.
+              All rights reserved <i class="bi bi-heart-fill text-danger"></i> by <a
+                href="https://tef.com.pk">www.tef.com.pk</a>
+            </div>
+
+            <div class="col-xl-4 text-center text-xl-end mb-3 mb-xl-0">
+              Designed by<a href="" target="_blank">Tanveer_Ahmad</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- End Footer-->
+
+    </main>
+  </div>
+
+
+
+
+  <!-- ======= Back to Top =======-->
+  <button id="back-to-top"><i class="bi bi-arrow-up-short"></i></button>
+  <style>
+    #btn-install-float {
+      position: fixed;
+      left: 20px;
+      top: 80px;
+      z-index: 1050;
+    }
+  </style>
+  <button id="btn-install-float" class="btn btn-primary d-none"><i class="bi bi-download me-1"></i>Install App</button>
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/+923000695646?text=Assalam-o-alaikum%20%E2%80%94%20Respected%20ITSM%20team%2C%20I%20would%20like%20to%20request%20a%20visit%20from%20your%20team%20to%20my%20office%2Fschool.%20Regards%2C%20"
+    class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+    <!-- WhatsApp SVG Icon -->
+    <img src="../assets/images/whatsapp.png" alt="WhatsApp">
+  </a>
+
+
+
+  <script>
+    // Optimize WhatsApp link for mobile
+    (function () {
+      const a = document.querySelector('.whatsapp-float');
+      const phone = '+923000695646'; // e.g. 923001234567
+      const text = encodeURIComponent('Assalam-o-alaikum — Respected ITSM team, I would like to request a visit from your team to my office/school. Regards, ');
+      const webLink = `https://wa.me/${phone}?text=${text}`;
+      const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+      a.href = isMobile ? `whatsapp://send?phone=${phone}&text=${text}` : webLink;
+    })();
+  </script>
+  <!-- Typed.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+  <!-- Typing Effect Script -->
+  <script>
+    var typed = new Typed("#typed-text", {
+      strings: [
+        "<i class='fas fa-hands-helping'></i> TEF-ITSM is a non-profit organization dedicated to supporting digital education in Pakistan.",
+        "<i class='fas fa-desktop'></i> We provide free IT support and maintenance to 300+ government school and college computer labs.",
+        "<i class='fas fa-tools'></i> Our mission is to keep every government computer lab fully functional — always.",
+        "<i class='fas fa-user-graduate'></i> We ensure that no student faces learning disruptions due to technical issues.",
+        "<i class='fas fa-network-wired'></i> Serving multiple districts with reliable, secure, and proactive IT solutions — free of cost.",
+        "<i class='fas fa-robot'></i> TEF-ITSM: Empowering digital education through innovation and artificial intelligence."
+      ],
+
+      typeSpeed: 80,
+      backSpeed: 25,
+      backDelay: 2000,
+      startDelay: 1000,
+      loop: true,
+      showCursor: true,
+      cursorChar: "|"
+    });
+  </script>
+
+  <!-- Swiper JS (using local vendor) -->
+  <script src="../assets/vendors/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper with Fade Effect -->
+  <script>
+    var swiper = new Swiper(".heroSwiper", {
+      loop: true,
+      effect: "fade",           // <-- add this
+      fadeEffect: {
+        crossFade: true        // smooth crossfade
+      },
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      speed: 800,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      slidesPerView: 1,
+      spaceBetween: 10,
+      centeredSlides: true,
+    });
+  </script>
+
+
+
+
+  <!-- ======= Javascripts =======-->
+  <script src="../assets/vendors/bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendors/gsap/gsap.min.js"></script>
+  <script src="../assets/vendors/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="../assets/vendors/isotope/isotope.pkgd.min.js"></script>
+  <script src="../assets/vendors/glightbox/glightbox.min.js"></script>
+  <script src="../assets/vendors/aos/aos.js"></script>
+  <script src="../assets/vendors/purecounter/purecounter.js"></script>
+  <script src="../assets/js/custom.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function () {
+        navigator.serviceWorker.register('assets/js/sw.js');
+      });
+    }
+  </script>
+  <script>
+    // PWA install prompt handler for footer + floating buttons
+    let deferredPrompt;
+    const footerBtn = document.getElementById('btn-install-app');
+    const floatBtn = document.getElementById('btn-install-float');
+
+    function showInstallButtons() {
+      if (floatBtn) floatBtn.classList.remove('d-none');
+      // Footer button is always visible now
+    }
+
+    function handleManualInstall() {
+      alert('If install prompt does not show:\n- Chrome menu → Add to Home screen\n- Or open in Chrome and visit again');
+    }
+
+    window.addEventListener('beforeinstallprompt', (e) => {
+      e.preventDefault();
+      deferredPrompt = e;
+      showInstallButtons();
+    });
+
+    async function triggerInstall() {
+      if (deferredPrompt) {
+        deferredPrompt.prompt();
+        await deferredPrompt.userChoice;
+        deferredPrompt = null;
+      } else {
+        handleManualInstall();
+      }
+    }
+
+    if (footerBtn) footerBtn.addEventListener('click', triggerInstall);
+    if (floatBtn) floatBtn.addEventListener('click', triggerInstall);
+  </script>
+  <!-- End JavaScripts-->
+</body>
+
+</html>
